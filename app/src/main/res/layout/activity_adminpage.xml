@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Adminpage">
+
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="141dp"
+        android:layout_height="141dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="195dp"
+        app:srcCompat="@drawable/add" />
+
+    <ImageView
+        android:id="@+id/rem"
+        android:layout_width="141dp"
+        android:layout_height="141dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/ann"
+        android:layout_marginEnd="33dp"
+        app:srcCompat="@drawable/delete" />
+
+    <ImageView
+        android:id="@+id/ann"
+        android:layout_width="141dp"
+        android:layout_height="141dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/add"
+        android:layout_marginBottom="228dp"
+        app:srcCompat="@drawable/ann" />
+
+    <ImageView
+        android:id="@+id/sel"
+        android:layout_width="141dp"
+        android:layout_height="141dp"
+        android:layout_alignStart="@+id/rem"
+        android:layout_alignTop="@+id/add"
+        app:srcCompat="@drawable/select" />
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProfile">
+
+    <Button
+        android:id="@+id/uppro"
+        android:layout_width="196dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="253dp"
+        android:background="#c4e8f5"
+        android:onClick="gotoupdate"
+        android:text="Update Profile"
+        app:layout_constraintBottom_toTopOf="@+id/Resume"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Resume"
+        android:layout_width="196dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="338dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="63dp"
+        android:background="#bae5f4"
+        android:onClick="gotoresume"
+        android:text="Upload Resume"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uppro" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Addcompany">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="241dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="218dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Company Description"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/website"
+            android:layout_width="179dp"
+            android:layout_height="51dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/ShowImageView" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="172dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="218dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:text="Eligibility"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <EditText
+            android:id="@+id/eligibility"
+            android:layout_width="182dp"
+            android:layout_height="47dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/location" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="165dp"
+            android:layout_height="53dp"
+            android:layout_marginEnd="215dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="19dp"
+            android:text="Company Logo"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="187dp"
+            android:layout_height="52dp"
+            android:layout_marginEnd="208dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:text="Company Website"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ButtonChooseImage" />
+
+        <Button
+            android:id="@+id/ButtonChooseImage"
+            android:layout_width="157dp"
+            android:layout_height="52dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="21dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:text="Choose Image"
+            app:layout_constraintEnd_toStartOf="@+id/ShowImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="354dp"
+            android:layout_height="73dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="182dp"
+            android:layout_height="47dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="27dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.615"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/description" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="174dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="215dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="27dp"
+            android:text="Location of Job"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description" />
+
+        <ImageView
+            android:id="@+id/ShowImageView"
+            android:layout_width="163dp"
+            android:layout_height="136dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="26dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ButtonChooseImage"
+            app:layout_constraintTop_toBottomOf="@+id/eligibility" />
+
+        <EditText
+            android:id="@+id/ImageNameEditText"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="26dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="37dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/ButtonUploadImage"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="122dp"
+            android:layout_marginStart="122dp"
+            android:layout_marginTop="88dp"
+            android:text="Submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.481"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ShowImageView" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="161dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/ImageNameEditText"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="218dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="37dp"
+            android:text="Company Name"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
